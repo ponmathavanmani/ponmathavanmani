@@ -4,7 +4,7 @@
 
 $user = 'db2';
 $password = 'RushHour@24';
-$hostname = '182.72.174.98';
+$hostname = 'localhost';//182.72.174.98
 $port = 50000;
 $database = 'mrkt_mgm';
 $conn_string = "DRIVER={IBM DB2 ODBC  DRIVER};DATABASE=$database;PORT=$port;HOSTNAME=$hostname;".
@@ -13,15 +13,6 @@ $conn = db2_connect($conn_string,'','');
 ?>
 <?php
 $user_check="";
-// if(isset($_SESSION['login_user']))
-// {
-// $user_check=$_SESSION['login_user'];
-// }
-// ///$uname = "'".$user_check."'";
-// if($user_check=="")
-// {
-// 	echo '<script>window.parent.location.href = "../login.php";</script>';
-// }
 ?>
 <!DOCTYPE html >
 <html >
